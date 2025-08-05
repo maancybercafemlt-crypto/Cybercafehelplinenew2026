@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber Cafe Help Line</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Cyber Cafe Help Line</h1>
+
+  <div class="section">
+    <h2>Welcome</h2>
+    <p>We provide fast, secure, and reliable cyber services.</p>
+  </div>
+
+  <div class="section">
+    <h2>Rate List</h2>
+    <ul>
+      <li>Browsing - ₹80/hour</li>
+      <li>Print - ₹5/page</li>
+      <li>Scan - ₹10 each</li>
+      <li>Lamination - ₹20 each</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>Phone: 7814903334</p>
+    <p>Email: jaidiyakingak47@gmail.com</p>
+  </div>
+
+  <div class="section">
+    <button onclick="document.getElementById('loginModal').style.display='block'">Admin Login</button>
+  </div>
+
+  <div class="section">
+    <h2>Chat With Us</h2>
+    <div id="chatBox">
+      <div id="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+      <h3>Admin Login</h3>
+      <input type="text" id="username" placeholder="Username"/><br/>
+      <input type="password" id="password" placeholder="Password"/><br/>
+      <button onclick="login()">Login</button>
+      <p><a href="#" onclick="forgotPassword()">Forgot Password?</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
